@@ -1,0 +1,19 @@
+{
+  "name": "postgrelab",
+  "version": "1.0.0",
+  "description": "Try postgre stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borel/postgreLab.git"
+  },
+  "author": "pbb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borel/postgreLab/issues"
+  },
+  "homepage": "https://github.com/borel/postgreLab#readme"
+}
