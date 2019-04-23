@@ -4,11 +4,18 @@
   "description": "Try postgre stuff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/borel/postgreLab.git"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "faker": "^4.1.0",
+    "pg": "6.2.2"
   },
   "author": "pbb",
   "license": "ISC",

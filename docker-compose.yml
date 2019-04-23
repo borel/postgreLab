@@ -1,0 +1,24 @@
+# docker-compose.yml
+version: "3"
+
+volumes:
+  database_data:
+    driver: local
+
+services:
+  app:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+  postgres:
+    image: postgres:11.2-alpine
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=dockerDb
+    ports:
+      - 5432:5432
+    volumes:
+      - database_data:/var/lib/postgresql/data
